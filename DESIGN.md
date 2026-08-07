@@ -15,8 +15,8 @@ colors:
   refraction-violet: "#bf5af2"
   refraction-purple: "#af52de"
   availability-green: "#34c759"
-  glass-light: "rgba(255, 255, 255, 0.72)"
-  glass-dark: "rgba(255, 255, 255, 0.18)"
+  glass-light: "rgba(255, 255, 255, 0.38)"
+  glass-dark: "rgba(255, 255, 255, 0.20)"
 typography:
   display-zh:
     fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "Microsoft YaHei", sans-serif'
@@ -137,13 +137,15 @@ The contact row is intentionally linear: actionable email first, followed by dot
 
 ## Elevation & Depth
 
-Depth is ambient rather than interactive. A broad blurred shadow lifts the inner glass sheet, a slightly tighter shadow grounds the orb, large diffused blue-violet fields imply environmental refraction, and a fine gradient stroke defines edges. No hover elevation or motion is implemented.
+Depth is optical rather than interactive. The inner glass sheet re-samples and displaces the environmental light beneath it, the orb applies a tighter second refraction pass, and blue-violet spectral edges reveal the material thickness. Broad offset shadows lift both lenses while localized white caustics clarify curvature. No hover elevation or motion is implemented.
 
 ### Shadow Vocabulary
 
-- **Glass Ambient:** `feDropShadow(0 24px 28px rgba(7, 17, 31, 0.22))` lifts the continuous inner sheet without producing a hard card edge.
-- **Orb Ambient:** `feDropShadow(0 24px 22px rgba(11, 18, 32, 0.28))` gives the optical sphere slightly denser local depth.
-- **Environmental Bloom:** `feGaussianBlur(32px)` diffuses the colored ellipses and light ribbon behind the glass.
+- **Glass Ambient:** `feDropShadow(0 26px 24px rgba(7, 17, 31, 0.18))` lifts the continuous inner sheet without producing a hard card edge.
+- **Orb Ambient:** `feDropShadow(0 28px 22px rgba(8, 16, 30, 0.30))` gives the optical sphere denser local depth.
+- **Environmental Bloom:** `feGaussianBlur(34px)` diffuses the colored ellipses and light ribbon behind the glass.
+- **Panel Refraction:** low-frequency displacement at `34px` bends the repeated backdrop inside the panel while a small blur keeps the result lens-like.
+- **Orb Refraction:** a tighter `52px` displacement produces stronger curvature inside the circular lens.
 
 **The Ambient-Only Rule.** Shadows describe translucent material and spatial separation; they never indicate a clickable card or hover state.
 
@@ -161,7 +163,7 @@ The README language/contact navigation is native Markdown by design. The languag
 
 ### Profile Hero
 
-The signature component is a bilingual, adaptive SVG calling card. It combines the environmental canvas, one translucent sheet, opportunity capsule, profession title, student subtitle, and abstract glass Unity prism in a single clipped composition. Chinese and English variants mirror geometry and semantics. The SVG provides `role="img"`, a localized title and description, and switches its canvas, glass, text, and hairline values through `prefers-color-scheme: dark`.
+The signature component is a bilingual, adaptive SVG calling card. It combines the environmental canvas, one refractive liquid-glass sheet, a smaller opportunity lens, profession title, student subtitle, and an abstract Unity prism inside a spherical glass lens. The panel and sphere each duplicate and distort the environmental light so transparency reads as physical refraction rather than a pale overlay. Chinese and English variants mirror geometry and semantics. The SVG provides `role="img"`, a localized title and description, and switches its canvas, glass, text, and edge values through `prefers-color-scheme: dark`.
 
 ## Do's and Don'ts
 
