@@ -26,3 +26,5 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   &nbsp;&nbsp;·&nbsp;&nbsp;
   <span>哔哩哔哩 · 即将上线</span>
 </p>
+
+<!-- Git identity verification: Amolao -->
