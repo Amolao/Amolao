@@ -57,9 +57,6 @@
     <filter id="panelShadow" x="-20%" y="-25%" width="140%" height="165%">
       <feDropShadow dx="0" dy="26" stdDeviation="24" flood-color="#07111f" flood-opacity=".18"/>
     </filter>
-    <filter id="pillShadow" x="-25%" y="-60%" width="150%" height="220%">
-      <feDropShadow dx="0" dy="7" stdDeviation="10" flood-color="#13233a" flood-opacity=".14"/>
-    </filter>
     <filter id="refract" x="-10%" y="-15%" width="120%" height="130%" color-interpolation-filters="sRGB">
       <feTurbulence type="fractalNoise" baseFrequency=".007 .016" numOctaves="2" seed="18" result="warp"/>
       <feDisplacementMap in="SourceGraphic" in2="warp" scale="34" xChannelSelector="R" yChannelSelector="B" result="shifted"/>
@@ -93,13 +90,10 @@
     <style>
       .canvas-a{stop-color:#f8fbff}.canvas-b{stop-color:#eaf1f9}.canvas-c{stop-color:#dfe9f5}
       .glass-a{stop-color:#fff;stop-opacity:.38}.glass-b{stop-color:#fff;stop-opacity:.14}.glass-c{stop-color:#d8ecff;stop-opacity:.22}
-      .primary{fill:#101828}.secondary{fill:#526070}.status-bg{fill:#fff;fill-opacity:.34}.status-text{fill:#526070}.status-edge{stroke:#fff;stroke-opacity:.78}
       .inner-shade{fill:#edf6ff;fill-opacity:.12}.rim-light{stroke:#fff;stroke-opacity:.74}
-      text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Microsoft YaHei",sans-serif}
       @media (prefers-color-scheme:dark){
         .canvas-a{stop-color:#080c14}.canvas-b{stop-color:#0c1422}.canvas-c{stop-color:#111b2c}
         .glass-a{stop-color:#fff;stop-opacity:.2}.glass-b{stop-color:#bfe3ff;stop-opacity:.07}.glass-c{stop-color:#7aaeff;stop-opacity:.11}
-        .primary{fill:#f6f8fb}.secondary{fill:#a9b5c5}.status-bg{fill:#fff;fill-opacity:.09}.status-text{fill:#f6f8fb}.status-edge{stroke:#fff;stroke-opacity:.22}
         .inner-shade{fill:#06101d;fill-opacity:.18}.rim-light{stroke:#fff;stroke-opacity:.42}
       }
     </style>
@@ -121,19 +115,6 @@
     <use href="#panel" fill="none" stroke="url(#edge)" stroke-width="2"/>
     <path d="M93 60H406" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="2.2" stroke-linecap="round"/>
     <path d="M1208 307V423C1208 440 1197 452 1180 454" fill="none" stroke="#c994ff" stroke-opacity=".46" stroke-width="2.4" stroke-linecap="round"/>
-
-    <g transform="translate(112 104)">
-      <g filter="url(#pillShadow)">
-        <rect class="status-bg" width="180" height="38" rx="19"/>
-        <rect class="status-edge" x=".75" y=".75" width="178.5" height="36.5" rx="18.25" fill="none" stroke-width="1.5"/>
-        <path d="M18 5H115" stroke="#fff" stroke-opacity=".62" stroke-width="1.4" stroke-linecap="round"/>
-      </g>
-      <circle cx="21" cy="19" r="5" fill="#34c759"/>
-      <circle cx="19.5" cy="17.5" r="1.7" fill="#fff" fill-opacity=".82"/>
-      <text class="status-text" x="36" y="24" font-size="13" font-weight="600" letter-spacing="1.2">开放求职机会</text>
-      <text class="primary" x="0" y="131" font-size="76" font-weight="650" letter-spacing="-2.2">Unity 开发</text>
-      <text class="secondary" x="2" y="181" font-size="25" font-weight="450" letter-spacing=".4">学生 · Unity Developer</text>
-    </g>
 
     <g transform="translate(986 260)" filter="url(#orbShadow)">
       <circle r="132" fill="url(#orbGlass)"/>
