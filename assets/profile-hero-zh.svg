@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
+  <!-- Liquid-glass profile hero. The surface is the identity, not a decorative card collection. -->
+  <title id="title">学生 Unity 开发者</title>
+  <desc id="desc">一张自适应明暗主题的液态玻璃数字名片，显示开放求职机会。</desc>
+  <defs>
+    <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1">
+      <stop class="canvas-a" offset="0"/>
+      <stop class="canvas-b" offset="1"/>
+    </linearGradient>
+    <radialGradient id="blue" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#2997ff" stop-opacity=".78"/>
+      <stop offset=".58" stop-color="#5ac8fa" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#5ac8fa" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violet" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#bf5af2" stop-opacity=".72"/>
+      <stop offset=".62" stop-color="#af52de" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#af52de" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop class="glass-a" offset="0"/>
+      <stop class="glass-b" offset=".52"/>
+      <stop class="glass-c" offset="1"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".92"/>
+      <stop offset=".3" stop-color="#fff" stop-opacity=".16"/>
+      <stop offset=".72" stop-color="#7dd3fc" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".7"/>
+    </linearGradient>
+    <linearGradient id="prism" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".78"/>
+      <stop offset=".32" stop-color="#7dd3fc" stop-opacity=".34"/>
+      <stop offset=".68" stop-color="#c084fc" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".08"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="32"/>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#07111f" flood-opacity=".22"/>
+    </filter>
+    <filter id="orbShadow" x="-50%" y="-50%" width="200%" height="220%">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#0b1220" flood-opacity=".28"/>
+    </filter>
+    <clipPath id="frame"><rect width="1280" height="520" rx="32"/></clipPath>
+    <style>
+      .canvas-a{stop-color:#f7f9fc}.canvas-b{stop-color:#e8eef7}
+      .glass-a{stop-color:#fff;stop-opacity:.72}.glass-b{stop-color:#fff;stop-opacity:.34}.glass-c{stop-color:#dcecff;stop-opacity:.44}
+      .primary{fill:#101828}.secondary{fill:#526070}.hairline{stroke:#24364d;stroke-opacity:.16}
+      .status-bg{fill:#fff;fill-opacity:.6}.status-text{fill:#28415e}
+      text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC","Microsoft YaHei",sans-serif}
+      @media (prefers-color-scheme:dark){
+        .canvas-a{stop-color:#090d16}.canvas-b{stop-color:#111827}
+        .glass-a{stop-color:#fff;stop-opacity:.18}.glass-b{stop-color:#cfe8ff;stop-opacity:.08}.glass-c{stop-color:#8bbcff;stop-opacity:.12}
+        .primary{fill:#f6f8fb}.secondary{fill:#a9b5c5}.hairline{stroke:#fff;stroke-opacity:.2}
+        .status-bg{fill:#fff;fill-opacity:.1}.status-text{fill:#dcecff}
+      }
+    </style>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="520" fill="url(#canvas)"/>
+    <ellipse cx="1110" cy="84" rx="300" ry="260" fill="url(#blue)" filter="url(#soft)"/>
+    <ellipse cx="908" cy="468" rx="330" ry="240" fill="url(#violet)" filter="url(#soft)"/>
+    <path d="M-80 448C167 302 310 505 548 338S913 95 1360 194" fill="none" stroke="#73b8ff" stroke-opacity=".12" stroke-width="84" filter="url(#soft)"/>
+
+    <g filter="url(#shadow)">
+      <rect x="58" y="52" width="1164" height="416" rx="28" fill="url(#glass)"/>
+      <rect x="58.75" y="52.75" width="1162.5" height="414.5" rx="27.25" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+    </g>
+
+    <g transform="translate(112 104)">
+      <rect class="status-bg" width="180" height="38" rx="19"/>
+      <circle cx="21" cy="19" r="4.5" fill="#34c759"/>
+      <text class="status-text" x="36" y="24" font-size="13" font-weight="600" letter-spacing="1.2">开放求职机会</text>
+      <text class="primary" x="0" y="131" font-size="76" font-weight="650" letter-spacing="-2.2">Unity 开发</text>
+      <text class="secondary" x="2" y="181" font-size="25" font-weight="450" letter-spacing=".4">学生 · Unity Developer</text>
+    </g>
+
+    <g transform="translate(935 257)" filter="url(#orbShadow)">
+      <circle r="127" fill="url(#prism)" stroke="url(#edge)" stroke-width="2"/>
+      <ellipse cx="-28" cy="-45" rx="70" ry="46" fill="#fff" fill-opacity=".2" transform="rotate(-24)"/>
+      <path d="M-53-47 0-78 53-47 0-16Z" fill="#fff" fill-opacity=".32" stroke="#fff" stroke-opacity=".48"/>
+      <path d="M-53-47 0-16V47L-53 16Z" fill="#5ac8fa" fill-opacity=".22" stroke="#fff" stroke-opacity=".36"/>
+      <path d="M53-47 0-16V47L53 16Z" fill="#bf5af2" fill-opacity=".18" stroke="#fff" stroke-opacity=".32"/>
+      <circle cx="55" cy="62" r="9" fill="#fff" fill-opacity=".7"/>
+    </g>
+  </g>
+</svg>
