@@ -11,6 +11,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <a href="./README_EN.md">English</a>
 </p>
 
+<!-- Local identity verification comment -->
+
 <p align="center">
   <img src="./assets/profile-hero-zh.svg" width="100%" alt="学生 Unity 开发者，开放求职机会" />
 </p>
