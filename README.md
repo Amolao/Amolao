@@ -14,7 +14,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <!-- Local identity verification comment -->
 
 <p align="center">
-  <img src="./assets/profile-hero-zh.svg" width="100%" alt="学生 Unity 开发者，开放求职机会" />
+  <img src="./assets/profile-hero-zh-clean.svg" width="100%" alt="蓝紫色液态玻璃装饰图" />
 </p>
 
 <p align="center">

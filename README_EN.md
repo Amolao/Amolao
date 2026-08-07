@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/profile-hero-en.svg" width="100%" alt="Student Unity Developer, open to opportunities" />
+  <img src="./assets/profile-hero-en-clean.svg" width="100%" alt="Blue and violet liquid-glass artwork" />
 </p>
 
 <p align="center">
