@@ -5,7 +5,7 @@
 <h1 align="center">👋 你好，欢迎来到我的 GitHub</h1>
 
 <p align="center">
-  <strong>🎮 学生 · Unity 开发者</strong>
+  <strong>🎮 开发者</strong>
 </p>
 
 <p align="center">
