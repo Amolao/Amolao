@@ -5,10 +5,6 @@
 </p>
 
 <p align="center">
-  <img src="./assets/profile-hero-en-clean.svg" width="100%" alt="Blue and violet liquid-glass artwork" />
-</p>
-
-<p align="center">
   A student Unity developer.
 </p>
 

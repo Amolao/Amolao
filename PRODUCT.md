@@ -20,7 +20,7 @@ web
 
 ## Capabilities and Constraints
 
-- GitHub Profile README，必须在 GitHub 的 Markdown 与 SVG 渲染约束内工作。
+- GitHub Profile README，必须在 GitHub 的 Markdown 渲染约束内工作。
 - 中文版作为默认主页，另提供完整英文版。
 - 邮箱为 `2176253267@qq.com`。
 - 个人网站与哔哩哔哩链接尚未提供，只能预留位置。
@@ -29,7 +29,6 @@ web
 ## Brand Commitments
 
 - 身份表述：学生、Unity 开发者。
-- 视觉方向：液态玻璃与 Apple 式极简。
 - 求职语境下保持专业、安静、精炼。
 - 不展示真实姓名、用户名或未经确认的个人信息。
 
@@ -42,4 +41,3 @@ web
 - 先表达职业身份，再提供联系行动。
 - 空缺信息明确留位，不用虚构内容填充。
 - 中英文内容保持语义对等。
-- 视觉辨识度服务于阅读与求职，不压过内容。
