@@ -24,7 +24,7 @@
 
 - ✉️ 邮箱：[2176253267@qq.com](mailto:2176253267@qq.com)
 - 🌐 个人网站：即将上线
-- 📺 哔哩哔哩：即将上线
+- 📺 哔哩哔哩：https://space.bilibili.com/3494368245713742?spm_id_from=333.1007.0.0
 
 <p align="center">
   感谢你的访问！✨
